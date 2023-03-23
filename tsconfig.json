@@ -1,0 +1,57 @@
+{
+  //todo какие файлы компилировать
+  //  "files": [
+  //    "app.ts"
+  //  ],
+  //todo какие файлы и папки компилировать
+  //  "include": [
+  //    "./src/**/*.ts"
+  //  ],
+  //todo что не компилировать
+  "exclude": [
+    "node_modules"
+  ],
+  //todo путь до основного tsconfig
+  //  "extends": "./tsconfig.json"
+  "compilerOptions": {
+    //todo используемая система export/import
+    "module": "commonjs",
+    //todo коневая папка/папки
+//    "rootDir": "./",
+//    "rootDirs": "./",
+    //todo корневой путь
+//    "baseUrl": "./",
+    //todo кастомные пути как wp
+//    "paths": {
+//      "@utils": "./utils/**"
+//    },
+    //todo импорт json файлов
+    "resolveJsonModule": true,
+    //todo в какую версию компилировать
+    "target": "ES2020",
+    //todo перечень es библиотек принудительно подключеных если не хватает target
+    //    "lib": [
+    //      "DOM"
+    //    ],
+    "sourceMap": true,
+    //todo jsx
+//    "jsx": "preserve"
+
+    //todo использовать js в ts проекте
+//    "allowJs": true,
+    //todo проверять js на ошибки в типизации
+//    "checkJs": true,
+    //todo output
+//    "outDir": "./dist"
+    //todo удаление комментариев
+    "removeComments": true,
+    //todo проверка на компиляторе без создания js/только при ошибках
+//    "noEmit": true,
+    "noEmitOnError": true,
+    //todo строгий режим
+    "strict": true,
+    "noUnusedLocals": true,
+
+    "noImplicitOverride": true,
+  }
+}

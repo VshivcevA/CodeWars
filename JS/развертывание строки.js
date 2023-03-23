@@ -5,9 +5,7 @@ function accum(s) {
     .split("")
     .map((i, j) => {
       str = i.repeat(j + 1).split("");
-      str.map((i) => {
-        str[0] = str[0].toUpperCase();
-      });
+      str.map(() => (str[0] = str[0].toUpperCase()));
       arr[j] = str.join("");
     });
   return arr.join("-");
